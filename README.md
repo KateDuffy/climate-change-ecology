@@ -20,9 +20,6 @@ The ectotherm thermal performance parameters are available for download as SD1.x
 
 ## Getting started
 
-### Dependencies
-
-Conda environment from yml
 
 ### Climate data analysis
 
