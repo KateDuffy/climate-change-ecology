@@ -1,4 +1,4 @@
-# Climate-mediated shifts in temperature fluctuations promote extinction risk [in press]
+# Climate-mediated shifts in temperature fluctuations promote extinction risk 
 
 This repository contains code to perform the analyses and modeling described in the following paper
 
