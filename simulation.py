@@ -38,7 +38,9 @@ def run_simulation(s, data_dir, save_dir):
     files = glob.glob(data_dir+"*_%s.nc" %s)
     
     r = TPC_data.loc[TPC_data['Species'] == s]
-    T_opt, sigma, T_max, lat, lon = r.Topt.item(), r.SIGMA.item(), r.CTmax.item(), r.Lat.item(), r.Long.item()
+    # T_opt, sigma, T_max, lat, lon = r.Topt.item(), r.SIGMA.item(), r.CTmax.item(), r.Lat.item(), r.Long.item()
+    T_opt, T_max, lat, lon = r.Topt.item(), r.CTmax.item(), r.Lat.item(), r.Long.item()
+    sigma = (r.Topt - r.Ctmin) * 0.25
     
     
     for i, file in enumerate(files):
